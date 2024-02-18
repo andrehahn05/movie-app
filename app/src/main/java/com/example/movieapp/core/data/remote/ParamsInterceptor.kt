@@ -10,7 +10,7 @@ class ParamsInterceptor: Interceptor {
         val request = chain.request()
         val url = request.url.newBuilder()
             .addQueryParameter(Constants.LANGUAGE_PARAM,Constants.LANGUAGE_VALUE)
-            .addQueryParameter(Constants.API_KEY_PARAM,BuildConfig.API_KEY)
+            .addQueryParameter(Constants.API_KEY_PARAM, BuildConfig.API_KEY)
             .build()
 
         val newRequest = request.newBuilder()
