@@ -5,5 +5,4 @@ data class Movie(
     val title: String,
     val voteAverage: Double = 0.0,
     val imageUrl: String = "",
-
 )
